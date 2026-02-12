@@ -1,17 +1,17 @@
 # 🚀 Vishnu Vardhan Akula  
 ### Senior Data Engineer | Cloud & Big Data Architect | ML-Ready Platforms  
 
-![Profile Views](https://komarev.com/ghpvc/?username=TheDataNerd20&color=blue)
+![](https://komarev.com/ghpvc/?username=TheDataNerd20&color=blue)
 
 ---
 
 ## 🔥 GitHub Analytics
 
-![GitHub Stats](https://github-readme-stats.vercel.app/api?username=TheDataNerd20&show_icons=true&hide_border=true&theme=tokyonight)
+<img src="https://github-readme-stats.vercel.app/api?username=TheDataNerd20&show_icons=true&hide_border=true&theme=tokyonight&cache_seconds=1800" />
 
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=TheDataNerd20&layout=compact&hide_border=true&theme=tokyonight)
+<img src="https://github-readme-stats.vercel.app/api/top-langs/?username=TheDataNerd20&layout=compact&hide_border=true&theme=tokyonight&cache_seconds=1800" />
 
-![GitHub Streak](https://streak-stats.demolab.com/?user=TheDataNerd20&theme=tokyonight&hide_border=true)
+<img src="https://streak-stats.demolab.com?user=TheDataNerd20&theme=tokyonight&hide_border=true" />
 
 ---
 
@@ -58,12 +58,12 @@ Senior Data Engineer with 5+ years of experience building scalable, cloud-native
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Vishnu%20Akula-0077B5?logo=linkedin&logoColor=white)](https://www.linkedin.com/in/vishnu-akula-the-data-nerd)
 
-📧 vishuakula20@gmail.com
+📧 vishuakula20@gmail.com  
 
 ---
 
 ## 🐍 Contribution Activity
 
-![Snake animation](https://github.com/TheDataNerd20/TheDataNerd20/blob/output/github-contribution-grid-snake.svg)
+<img src="https://raw.githubusercontent.com/TheDataNerd20/TheDataNerd20/output/github-contribution-grid-snake.svg" />
 
 ---
