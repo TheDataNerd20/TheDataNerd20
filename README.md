@@ -67,3 +67,5 @@ Senior Data Engineer with 5+ years of experience building scalable, cloud-native
 <img src="https://raw.githubusercontent.com/TheDataNerd20/TheDataNerd20/output/github-contribution-grid-snake.svg" />
 
 ---
+![Snake animation](https://github.com/TheDataNerd20/TheDataNerd20/blob/output/github-contribution-grid-snake.svg)
+
