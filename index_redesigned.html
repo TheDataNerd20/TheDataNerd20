@@ -1,0 +1,813 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vishnu Vardhan A - Senior Data Engineer</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #0a0a0a;
+            color: #e0e0e0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 30px;
+        }
+
+        /* Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 0;
+            gap: 60px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-content h1 {
+            font-size: 3.5rem;
+            font-weight: 300;
+            margin-bottom: 20px;
+            color: #ffffff;
+            letter-spacing: -1px;
+        }
+
+        .hero-content .subtitle {
+            font-size: 1.3rem;
+            color: #888;
+            margin-bottom: 40px;
+            font-weight: 300;
+        }
+
+        .hero-cta {
+            display: flex;
+            gap: 20px;
+            margin-bottom: 60px;
+        }
+
+        .btn {
+            padding: 15px 35px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: none;
+            font-weight: 500;
+        }
+
+        .btn-primary {
+            background: #1a73e8;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #1557b0;
+            transform: translateY(-2px);
+        }
+
+        .btn-secondary {
+            background: transparent;
+            color: #e0e0e0;
+            border: 1px solid #444;
+        }
+
+        .btn-secondary:hover {
+            border-color: #888;
+            color: #ffffff;
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .hero-image img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        /* Hero Stats */
+        .hero-stats {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px;
+            margin-top: 60px;
+        }
+
+        .stat {
+            border-top: 1px solid #333;
+            padding-top: 20px;
+        }
+
+        .stat-number {
+            font-size: 2rem;
+            font-weight: 300;
+            color: #1a73e8;
+            margin-bottom: 5px;
+        }
+
+        .stat-label {
+            font-size: 0.95rem;
+            color: #888;
+        }
+
+        /* Journey Section */
+        .journey {
+            padding: 120px 0;
+            border-top: 1px solid #222;
+        }
+
+        .journey h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 80px;
+            color: #ffffff;
+        }
+
+        .timeline {
+            position: relative;
+            padding-left: 60px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #333;
+        }
+
+        .timeline-item {
+            margin-bottom: 60px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: -58px;
+            top: 5px;
+            width: 16px;
+            height: 16px;
+            background: #1a73e8;
+            border-radius: 50%;
+            border: 3px solid #0a0a0a;
+        }
+
+        .timeline-year {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .timeline-description {
+            color: #aaa;
+            font-size: 0.95rem;
+            line-height: 1.7;
+        }
+
+        /* Expertise Section */
+        .expertise {
+            padding: 120px 0;
+            border-top: 1px solid #222;
+        }
+
+        .expertise h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 80px;
+            color: #ffffff;
+        }
+
+        .expertise-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .expertise-cards {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+        }
+
+        .expertise-card {
+            background: #151515;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            transition: all 0.3s ease;
+        }
+
+        .expertise-card:hover {
+            border-color: #333;
+            background: #1a1a1a;
+        }
+
+        .expertise-card-icon {
+            width: 60px;
+            height: 60px;
+            background: #1a1a1a;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            color: #1a73e8;
+        }
+
+        .expertise-card-title {
+            font-size: 1.3rem;
+            color: #ffffff;
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .expertise-card-content {
+            color: #888;
+            font-size: 0.95rem;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 8px;
+        }
+
+        .expertise-card-content span {
+            display: inline-block;
+            padding: 5px 10px;
+            background: #1a1a1a;
+            border-radius: 4px;
+        }
+
+        .expertise-narrative {
+            color: #aaa;
+            line-height: 1.8;
+        }
+
+        .expertise-narrative h3 {
+            color: #ffffff;
+            margin-bottom: 20px;
+            font-size: 1.3rem;
+            font-weight: 500;
+        }
+
+        .expertise-narrative p {
+            margin-bottom: 20px;
+        }
+
+        /* Featured Projects */
+        .projects {
+            padding: 120px 0;
+            border-top: 1px solid #222;
+        }
+
+        .projects h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 80px;
+            color: #ffffff;
+        }
+
+        .project-card {
+            background: #151515;
+            padding: 40px;
+            border-radius: 12px;
+            border: 1px solid #222;
+            margin-bottom: 30px;
+            transition: all 0.3s ease;
+        }
+
+        .project-card:hover {
+            border-color: #1a73e8;
+            background: #1a1a1a;
+        }
+
+        .project-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 20px;
+        }
+
+        .project-title {
+            font-size: 1.5rem;
+            color: #ffffff;
+            font-weight: 500;
+        }
+
+        .project-meta {
+            font-size: 0.85rem;
+            color: #888;
+            text-align: right;
+        }
+
+        .project-description {
+            color: #aaa;
+            margin-bottom: 20px;
+            line-height: 1.7;
+        }
+
+        .project-highlights {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .highlight {
+            background: #0a0a0a;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 3px solid #1a73e8;
+        }
+
+        .highlight-title {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 5px;
+        }
+
+        .highlight-value {
+            font-size: 1.3rem;
+            color: #1a73e8;
+            font-weight: 500;
+        }
+
+        .project-tech {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .tech-tag {
+            background: #1a1a1a;
+            color: #aaa;
+            padding: 5px 12px;
+            border-radius: 4px;
+            font-size: 0.85rem;
+        }
+
+        /* Skills Section */
+        .skills {
+            padding: 120px 0;
+            border-top: 1px solid #222;
+        }
+
+        .skills h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 80px;
+            color: #ffffff;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 40px;
+        }
+
+        .skill-category {
+            background: #151515;
+            padding: 30px;
+            border-radius: 12px;
+            border: 1px solid #222;
+        }
+
+        .skill-category-title {
+            font-size: 1.1rem;
+            color: #1a73e8;
+            margin-bottom: 15px;
+            font-weight: 500;
+        }
+
+        .skill-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-badge {
+            background: #0a0a0a;
+            color: #aaa;
+            padding: 8px 14px;
+            border-radius: 6px;
+            font-size: 0.9rem;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 120px 0;
+            border-top: 1px solid #222;
+            border-bottom: 1px solid #222;
+            text-align: center;
+        }
+
+        .contact h2 {
+            font-size: 2.5rem;
+            font-weight: 300;
+            margin-bottom: 50px;
+            color: #ffffff;
+        }
+
+        .contact-info {
+            display: flex;
+            justify-content: center;
+            gap: 60px;
+            margin-bottom: 60px;
+            flex-wrap: wrap;
+        }
+
+        .contact-item {
+            text-align: center;
+        }
+
+        .contact-label {
+            font-size: 0.9rem;
+            color: #888;
+            margin-bottom: 8px;
+        }
+
+        .contact-value {
+            font-size: 1.1rem;
+            color: #ffffff;
+        }
+
+        .contact-value a {
+            color: #1a73e8;
+            text-decoration: none;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .social-link {
+            display: inline-flex;
+            width: 50px;
+            height: 50px;
+            align-items: center;
+            justify-content: center;
+            background: #151515;
+            border-radius: 50%;
+            color: #888;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border: 1px solid #222;
+        }
+
+        .social-link:hover {
+            background: #1a73e8;
+            color: white;
+            border-color: #1a73e8;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero {
+                flex-direction: column;
+                padding: 60px 0;
+                min-height: auto;
+            }
+
+            .hero-content h1 {
+                font-size: 2.5rem;
+            }
+
+            .hero-stats {
+                grid-template-columns: 1fr;
+            }
+
+            .expertise-grid,
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .project-highlights {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-info {
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Hero Section -->
+    <div class="container">
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Vishnu Vardhan A</h1>
+                <p class="subtitle">Senior Data Engineer | 5+ Years Building Enterprise Data Platforms</p>
+                <div class="hero-cta">
+                    <button class="btn btn-primary">View Resume</button>
+                    <button class="btn btn-secondary">View Projects</button>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <div class="stat-number">5+</div>
+                        <div class="stat-label">Years Experience</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">3TB+</div>
+                        <div class="stat-label">Data Migrated</div>
+                    </div>
+                    <div class="stat">
+                        <div class="stat-number">10+</div>
+                        <div class="stat-label">Teams Supported</div>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div style="width: 100%; height: 400px; background: linear-gradient(135deg, #1a73e8 0%, #0a3c7a 100%); border-radius: 15px; display: flex; align-items: center; justify-content: center; color: #666;">
+                    [Your Photo Here]
+                </div>
+            </div>
+        </section>
+
+        <!-- Journey Section -->
+        <section class="journey">
+            <h2>My Journey</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">Jan 2025 – Present</div>
+                    <div class="timeline-title">Senior Data Engineer at BlackRock</div>
+                    <div class="timeline-description">
+                        Spearheading enterprise-scale data platform migration to Azure. Optimizing data processing pipelines with Spark & Databricks for 35% throughput improvement.
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">Sept 2019 – Nov 2023</div>
+                    <div class="timeline-title">Data Engineer at General Electric</div>
+                    <div class="timeline-description">
+                        Redesigned and modernized manufacturing data infrastructure. Migrated 80+ production workflows from Oozie to Apache Airflow, achieving 25% ETL performance improvement.
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Expertise Section -->
+        <section class="expertise">
+            <h2>My Expertise</h2>
+            <div class="expertise-grid">
+                <div class="expertise-cards">
+                    <div class="expertise-card">
+                        <div class="expertise-card-icon">⚡</div>
+                        <div class="expertise-card-title">Big Data & Cloud</div>
+                        <div class="expertise-card-content">
+                            <span>Apache Spark</span>
+                            <span>Azure Databricks</span>
+                            <span>AWS EMR</span>
+                            <span>Snowflake</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-icon">🔄</div>
+                        <div class="expertise-card-title">Data Orchestration</div>
+                        <div class="expertise-card-content">
+                            <span>Apache Airflow</span>
+                            <span>dbt Core</span>
+                            <span>Data Factory</span>
+                            <span>AWS Glue</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-icon">💻</div>
+                        <div class="expertise-card-title">Programming</div>
+                        <div class="expertise-card-content">
+                            <span>Python</span>
+                            <span>SQL</span>
+                            <span>Scala</span>
+                            <span>Bash</span>
+                        </div>
+                    </div>
+                    <div class="expertise-card">
+                        <div class="expertise-card-icon">🛠️</div>
+                        <div class="expertise-card-title">DevOps & Infrastructure</div>
+                        <div class="expertise-card-content">
+                            <span>Docker</span>
+                            <span>Kubernetes</span>
+                            <span>Terraform</span>
+                            <span>CI/CD</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="expertise-narrative">
+                    <h3>Building Scalable Data Platforms</h3>
+                    <p>
+                        I'm passionate about designing and building data platforms that solve real business problems. With 5+ years of hands-on experience at leading companies like BlackRock and General Electric, I've developed deep expertise in building enterprise-scale data infrastructure.
+                    </p>
+                    <p>
+                        My approach combines <strong>scalability</strong> (platforms that grow with business needs), <strong>reliability</strong> (production-grade quality), and <strong>efficiency</strong> (optimized pipelines). I thrive in complex environments where data infrastructure directly impacts business outcomes.
+                    </p>
+                    <p>
+                        Whether migrating petabyte-scale datasets, optimizing ETL workflows, or implementing data quality frameworks, I focus on delivering solutions that empower teams and drive strategic decision-making.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Featured Projects -->
+        <section class="projects">
+            <h2>Featured Projects</h2>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div>
+                        <div class="project-title">Azure-Based Investment Data Platform</div>
+                        <div style="color: #888; margin-top: 5px;">BlackRock | Senior Data Engineer</div>
+                    </div>
+                    <div class="project-meta">
+                        <div>Jan 2025 – Present</div>
+                        <div style="color: #666; margin-top: 5px;">Enterprise-Scale Migration</div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    Spearheading enterprise-scale data platform migration and analytics modernization for global investment management. Delivered 3+ TB data migration 10% ahead of schedule with 35% throughput improvement.
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight">
+                        <div class="highlight-title">Data Migrated</div>
+                        <div class="highlight-value">3+ TB</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-title">Performance Gain</div>
+                        <div class="highlight-value">35%</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-title">Teams Enabled</div>
+                        <div class="highlight-value">10+</div>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Azure Databricks</span>
+                    <span class="tech-tag">ADLS Gen2</span>
+                    <span class="tech-tag">Snowflake</span>
+                    <span class="tech-tag">PySpark</span>
+                    <span class="tech-tag">dbt Core</span>
+                    <span class="tech-tag">Apache Airflow</span>
+                    <span class="tech-tag">Great Expectations</span>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div>
+                        <div class="project-title">Large-Scale ETL Modernization</div>
+                        <div style="color: #888; margin-top: 5px;">General Electric | Data Engineer</div>
+                    </div>
+                    <div class="project-meta">
+                        <div>Sept 2019 – Nov 2023</div>
+                        <div style="color: #666; margin-top: 5px;">Petabyte-Scale Architecture</div>
+                    </div>
+                </div>
+                <div class="project-description">
+                    Redesigned manufacturing and financial data infrastructure across global operations. Migrated 80+ production workflows from legacy Oozie to Apache Airflow while optimizing query performance by 40%.
+                </div>
+                <div class="project-highlights">
+                    <div class="highlight">
+                        <div class="highlight-title">Workflows Migrated</div>
+                        <div class="highlight-value">80+</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-title">Query Performance</div>
+                        <div class="highlight-value">40%</div>
+                    </div>
+                    <div class="highlight">
+                        <div class="highlight-title">Daily Users</div>
+                        <div class="highlight-value">300+</div>
+                    </div>
+                </div>
+                <div class="project-tech">
+                    <span class="tech-tag">Apache Spark</span>
+                    <span class="tech-tag">AWS Glue</span>
+                    <span class="tech-tag">S3</span>
+                    <span class="tech-tag">Redshift</span>
+                    <span class="tech-tag">Apache Airflow</span>
+                    <span class="tech-tag">Lambda</span>
+                    <span class="tech-tag">Athena</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="skills">
+            <h2>Technical Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">PROGRAMMING</div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Python</span>
+                        <span class="skill-badge">SQL</span>
+                        <span class="skill-badge">Scala</span>
+                        <span class="skill-badge">Bash</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">BIG DATA & STREAMING</div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Apache Spark</span>
+                        <span class="skill-badge">PySpark</span>
+                        <span class="skill-badge">Kafka</span>
+                        <span class="skill-badge">Structured Streaming</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">CLOUD PLATFORMS</div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Azure Databricks</span>
+                        <span class="skill-badge">ADLS Gen2</span>
+                        <span class="skill-badge">AWS EMR</span>
+                        <span class="skill-badge">S3</span>
+                        <span class="skill-badge">Redshift</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">DATA ORCHESTRATION</div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Apache Airflow</span>
+                        <span class="skill-badge">dbt Core</span>
+                        <span class="skill-badge">Data Factory</span>
+                        <span class="skill-badge">Workflow Orchestration</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">DATA WAREHOUSING</div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Snowflake</span>
+                        <span class="skill-badge">Redshift</span>
+                        <span class="skill-badge">PostgreSQL</span>
+                        <span class="skill-badge">Delta Lake</span>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">DEVOPS & INFRASTRUCTURE</div>
+                    <div class="skill-list">
+                        <span class="skill-badge">Docker</span>
+                        <span class="skill-badge">Kubernetes</span>
+                        <span class="skill-badge">Terraform</span>
+                        <span class="skill-badge">GitHub Actions</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact">
+            <h2>Let's Connect</h2>
+            <div class="contact-info">
+                <div class="contact-item">
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value"><a href="mailto:akulavishnuvardhan2000@gmail.com">akulavishnuvardhan2000@gmail.com</a></div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Phone</div>
+                    <div class="contact-value">(469) 705-9964</div>
+                </div>
+                <div class="contact-item">
+                    <div class="contact-label">Location</div>
+                    <div class="contact-value">USA</div>
+                </div>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/TheDataNerd20" class="social-link" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/vishnu-akula-the-data-nerd/" class="social-link" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
